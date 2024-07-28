@@ -7,7 +7,8 @@ A healthcare facility has requested an analysis of patient records to gain insig
 To develop a comprehensive visualization dashboard with key performance indicators (KPIs) to improve patient management and financial planning.
 
 
-![image](https://github.com/user-attachments/assets/004b773f-c39d-4f9f-bce3-9eb7f5625245)
+![image](https://github.com/user-attachments/assets/eab28972-3ff1-4e45-9a92-de65872016fb)
+
 
 ### Objectives
 - To track the number of patients admitted or readmitted over time.
@@ -33,6 +34,18 @@ Step 1: Created a mock-up of questions to be answered on the dashboard
    - Calculate the procedure covered by insurance = CALCULATE([No of procedure], payer coverage <> 0)
 - Number of patient admitted  = DISTINCTCOUNT(Patient)
 - Number of patient readmitted = CALCULATE([no of pateient admitted], pateint id > 1)
+
+### Business Insights
+- Number of Patients Admitted or Readmitted Over Time: The total number of encounters ranged from 1,336 in 2011 to 3,887 in 2014, with 2011 being the lowest and 2014 the highest.
+The number of readmitted patients exceeds the number of new patients, with many patients being readmitted multiple times.
+Fewer patients came for a single encounter compared to those who were readmitted several times.
+- Average Length of Hospital Stays: For patients undergoing procedures, the average stay is approximately 15 minutes.
+- Average Cost Per Patient Visit: The average cost per visit is about $279.
+- Number of Procedures Covered by Insurance: Out of 157 procedures, approximately 138 are covered by insurance.
+- Revenue Generated Over Time: Total revenue from 2016 to 2022 is approximately $102 million.
+Revenue was the lowest in 2011 and peaked in 2014.
+
+
 
 
 
