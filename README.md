@@ -21,4 +21,9 @@ Step 1: Created a mock-up of questions to be answered on the dashboard
 - What is the average cost per patient visit?
 - How many procedures are covered by insurance?
 
+
+
+![image](https://github.com/user-attachments/assets/004b773f-c39d-4f9f-bce3-9eb7f5625245)
+
+
   
