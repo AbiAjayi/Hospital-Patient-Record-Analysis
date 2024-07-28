@@ -6,6 +6,9 @@ A healthcare facility has requested an analysis of patient records to gain insig
 ### Business Goals
 To develop a comprehensive visualization dashboard with key performance indicators (KPIs) to improve patient management and financial planning.
 
+
+![image](https://github.com/user-attachments/assets/004b773f-c39d-4f9f-bce3-9eb7f5625245)
+
 ### Objectives
 - To track the number of patients admitted or readmitted over time.
 - To determine the average length of hospital stays.
@@ -21,9 +24,19 @@ Step 1: Created a mock-up of questions to be answered on the dashboard
 - What is the average cost per patient visit?
 - How many procedures are covered by insurance?
 
+### DAX Calculations
+
+- Average Length of stay = DATEDIFF(Start, Stop, Minutes) this DAX formular will extract the time difference from our date/time column
+- Average cost per visit = AVERAGE(total claim cost)
+- How many procedures are covered by insurance: To calculate this
+   - Calculate the number of procedure = DISTINCTCOUNT(code)
+   - Calculate the procedure covered by insurance = CALCULATE([No of procedure], payer coverage <> 0)
+- Number of patient admitted  = DISTINCTCOUNT(Patient)
+- Number of patient readmitted = CALCULATE([no of pateient admitted], pateint id > 1)
 
 
-![image](https://github.com/user-attachments/assets/004b773f-c39d-4f9f-bce3-9eb7f5625245)
+
+
 
 
   
