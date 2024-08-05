@@ -33,7 +33,7 @@ Step 1: Created a mock-up of questions to be answered on the dashboard
    - Calculate the number of procedure = DISTINCTCOUNT(code)
    - Calculate the procedure covered by insurance = CALCULATE([No of procedure], payer coverage <> 0)
 - Number of patient admitted  = DISTINCTCOUNT(Patient)
-- Number of patient readmitted = CALCULATE([no of pateient admitted], pateint id > 1)
+- Number of patient readmitted = CALCULATE([no of patient admitted], patient id > 1)
 
 ### Business Insights
 - Number of Patients Admitted or Readmitted Over Time: The total number of encounters ranged from 1,336 in 2011 to 3,887 in 2014, with 2011 being the lowest and 2014 the highest.
